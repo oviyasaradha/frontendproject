@@ -1,0 +1,22 @@
+.wrap-left{
+    background-color: blue;
+    height:100vh;
+}
+.wrap-right{
+    background-image: url(./Images/download.webp);
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+@media only screen and (max-width: 600px) {
+.wrap-left{
+    background-color: red;
+    
+}
+.wrap-right{
+    background-image: url(./Images/download.webp);
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+}

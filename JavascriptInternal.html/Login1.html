@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Login1.css"/>
+</head>
+<body>
+    <div class="page">
+        <input type="text" placeholder="Enter your first name" class = "input-box" id="input1"/><br/>
+          <input type="text" placeholder="Enter your Last name" class = "input-box"  id="input2"/><br/>
+            <input type="text" placeholder="Enter your Username" class = "input-box" id="input3"/><br/>
+              <input type="password" placeholder="Enter your password" class = "input-box" id="input4"/><br/>
+           <input type="number" placeholder="Enter your Number" class = "input-box" id="input5"/><br/>   
+           <button class="signbtn" onclick="handleSubmit()">Sign up</button>
+    </div>
+
+    <script>
+        function handleSubmit(){
+        let fname = document.getElementById("input1").value.trim();
+        let lname = document.getElementById("input2").value.trim();
+        let username = document.getElementById("input3").value.trim();
+        let pass = document.getElementById("input4").value.trim();
+        let phnno = document.getElementById("input5").value.trim();
+
+
+        const nameRegex = /^[A-Za-z]{2,}$/;
+// Only letters, at least 2 characters
+
+const usernameRegex = /^[A-Za-z0-9_]{4,20}$/;
+// Letters, numbers, underscores, length 4–20
+
+const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+// At least one letter, one number, and min length 6
+
+const phoneRegex = /^[0-9]{10}$/;
+// Exactly 10 digits
+
+
+      if(!fname || !lname || !username  ||! pass || !phnno ){
+       alert("please fill all the fields");
+        return;
+      }
+        if(!nameRegex.test(fname)){
+           
+          alert("First namemust be contain only letters and be atleast 2 characters")
+          return;
+        }
+
+       
+
+if (!nameRegex.test(lname)) {
+    alert("Last name must contain only letters and be at least 2 characters");
+    return;
+}
+
+if (!usernameRegex.test(username)) {
+    alert("Username must be 4–20 characters and can contain letters, numbers, and underscores");
+     return;
+}
+
+if (!passwordRegex.test(pass)) {
+    alert("Password must be at least 6 characters, with at least one letter and one number");
+     return;
+}
+
+if (!phoneRegex.test(phnno)) {
+    alert("Phone number must be exactly 10 digits");
+     return;
+}
+
+      else{
+        alert("Signup success");
+        localStorage.setItem("username" , username)
+        localStorage.setItem("pass" , pass)
+        window.location.href = "Signup1.html"
+         return;
+      }
+    }
+    
+    </script>
+    
+</body>
+</html>

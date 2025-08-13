@@ -1,0 +1,32 @@
+table{
+      height :150px;
+      width:150px;
+}
+
+table,th,td{
+    border: 2px solid;
+    border-collapse:collapse ;
+    text-align: center ;
+}
+th{
+    background-color: beige;
+}
+td{
+    background-color: azure;
+}
+/* table header footer,inline style */
+
+   .hole {
+    border: 1px solid;
+    width: 60px;
+    background-color: aquamarine;
+    margin-left: 356px;
+    margin-top: 10px;
+    padding: 10px;
+    background-image: url(./Images/pictures.webp);
+}
+body{
+    background-image: url(./Images/pictures.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

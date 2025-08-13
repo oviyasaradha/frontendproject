@@ -1,0 +1,40 @@
+.col-7{
+    background-color: blue;
+    height: 100vh;
+    padding: 40px;
+    width: 50%;
+    font-size: 56px;
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+   
+    
+}
+body{
+    font-family: 'poppins',sans-serif;
+    background: color #4284F3; 
+    display: flex;
+    height: 100vh;
+    justify-self:center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 8px;
+    overflow:hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.col-7 One{
+    background-color: #0088cc;
+    color: #fff;
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

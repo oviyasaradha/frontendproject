@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1"/>
+    <input type="text" id="input2"/>
+    <button onclick="getdata()"> Add</button>
+    <h1 id="op"> </h1>
+    <script>
+        
+       
+        function getdata(){
+            let a = document.getElementById("input1").value  //getting data from body to script//letis block scope
+             let b = document.getElementById("input2").value 
+             //let c= a+b;
+             let c= parseInt(a)+parseInt(b);
+            document.getElementById("op").textContent=c;
+        }
+
+
+        //defaulty the input element consider everything as string to change this to input we must 
+        // use parseInt for int and parseFloat for float
+
+
+    </script>
+</body>
+</html>

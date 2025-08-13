@@ -1,0 +1,30 @@
+.img{
+    position: relative;
+}
+.helo{
+    position: absolute;
+    top: 0;
+
+}
+.img1{
+    width: 100%;
+    display:flex;
+    overflow:scroll;
+    gap:10px;
+
+
+}
+.wrap{
+    display:flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    position: fixed;
+    width:100%;
+}
+.button1{
+    cursor:pointer;
+    background-color: antiquewhite;
+}
+.button1:hover{
+    background-color: azure;
+}

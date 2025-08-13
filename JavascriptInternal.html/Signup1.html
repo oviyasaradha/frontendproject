@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="two">
+    <input type="text"  placeholder="Username" id="name"/><br/>
+     <input type="password"  placeholder="*******" id="pass"/><br/>
+     <button class="login" onclick="loginpage()">Login</button>
+    </div>
+
+  
+
+    <script>
+        function loginpage(){
+        let uname = document.getElementById("name").value
+         let password = document.getElementById("pass").value
+         let signupuser = localStorage.getItem("username")
+            let signuppass = localStorage.getItem("pass")
+
+         if(uname === ''|| password ===''){
+            alert("Please fill the details")
+         }else if(signupuser === uname && signuppass === password) {
+             alert("Login success")
+         }else{
+            alert("Invalid username or password")
+         }
+        }
+    </script>
+</body>
+</html>

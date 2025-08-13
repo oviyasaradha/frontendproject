@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="today1()"> date</button>
+    <button onclick="delivery()"> delivery date</button>
+    <button onclick="difff()"> difference</button>
+    <h1 id="date"> </h1>
+    <h1 id="delivery"> </h1>
+    <h1 id="difference"> </h1>
+    <script>
+        var today =new Date()
+        function today1(){
+            document.getElementById('date').textContent=today
+
+
+        }
+
+        var delivery1=new Date()
+        delivery1.setDate(2)
+        function delivery(){
+            document.getElementById('delivery').textContent=delivery1
+        }
+        
+        var diff= (Math.abs(today-delivery1)/(24*60*60))
+       
+
+        function difff(){
+            document.getElementById('difference').textContent=diff
+        }
+
+    </script>
+</body>
+</html>

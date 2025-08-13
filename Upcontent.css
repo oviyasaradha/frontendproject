@@ -1,0 +1,17 @@
+/* flex property */
+.side{
+    display: flex;
+    /* justify-content: space-around; */
+    background-color: antiquewhite;
+    cursor: pointer;
+    gap: 118px;
+}
+.helo{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: darkcyan;
+    /* width:180px; */
+    width:16%;
+    height:119vh;
+}

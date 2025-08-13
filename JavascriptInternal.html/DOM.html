@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+   <button onclick="Increment()">+</button>
+    <h1 id="Simple">0</h1>
+       <button onclick="Decrement()">-</button>
+
+       <button onclick="Show()">Show</button>
+       <h1 id="display"></h1>
+    
+    <script>
+         var count = 0
+       
+
+
+        function Increment(){
+             count ++
+             document.getElementById("Simple").textContent = count
+            
+        }
+
+         function Decrement(){
+            count --
+             document.getElementById("Simple").textContent = count
+             
+
+        }
+
+
+
+        var now = new Date()
+        function Show(){
+            document.getElementById("display").textContent = now
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="Birth-year" placeholder="Enter your birth year"/>
+    <button onclick=" birthday()">Get Age</button>
+    <h1 id="year"></h1>
+
+
+    <script>
+        function birthday(){
+            let year = Number(document.getElementById("Birth-year").value)
+            let current_year = new Date().getFullYear()
+            let age = (current_year) -(year) 
+            document.getElementById("year").textContent = "You are" + age + "years old"
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <script>
+    let arr = [1,2,3,"hello"]
+    arr[2] = 5
+    console.log(arr);
+    
+    //the push ,pop,shift and unshift does not work in the object.
+    let obj = {S_no : 101, name :" Oviya"}
+    console.log(obj);
+     console.log(obj.S_no);
+      console.log(obj.name);   //deconstructor is mostly used in the object
+      //deconstructor is declared using the dot(.)operator...
+    
+
+      //If statement
+      let num = 0
+      if(num > 0){
+        console.log("The number is positive");
+        
+
+      }else if(num < 0){
+        console.log("The number is negative");
+        
+      }else{
+        console.log("It is zero");
+        
+      }
+
+      let number = 20
+      if(number % 2 == 0){
+        console.log("The number is even");
+        
+      }else{
+        console.log("The number is odd");
+        
+      }
+
+
+      let a = 10
+      let b=20
+      let c=25
+      let d= 21
+      let e = 30
+
+      if(a>b && a>c && a>d && a>e){
+        console.log("The value of a is greater");
+        
+      }else if(b>a&&b>c && b>d && b>e){
+        console.log("The value of b is greater");
+        
+      }else if(c>a && c>b && c>d && c>e){
+        console.log("The value of c is greater");
+        
+      }else if(d>a && d>b && d>c && d>e){
+        console.log("The value of d is greater");
+        
+      }else{
+        console.log("The value of e is greater")
+      }
+
+      let dt = new Date() // to check the current time and date..
+      console.log(dt);
+
+       console.log(dt.getHours());
+       console.log(dt.getDate());
+        console.log(dt.getFullYear());
+         console.log(dt.getMonth()+1);
+          console.log(dt.getMilliseconds());
+           console.log(dt.getTime());
+
+
+           console.log(dt.setHours(12));
+           console.log(dt.setDate(5));
+            console.log(dt.setMonth(8)+1);
+            console.log(dt.setMilliseconds(9));
+
+           console.log(dt);
+           
+           
+           // javascript------------- Body
+       
+                        // DOM--------------Total pade rerender
+                        //virtual DOM ---------Particular data will be rerender not the entire page
+             
+            //Static ------------ Hardcore or manual declaration of the datas
+            
+            //Dynamic ------------ Data may come from javascript or backend...
+
+            
+      
+    
+</script>
+</body>
+</html>

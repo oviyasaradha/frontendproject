@@ -1,0 +1,23 @@
+.page{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width:200px;
+    background-color: azure;
+    border: 2px solid black;
+    padding: 10px 5px 10px 5px;
+    margin-left: 500px;
+}
+.input-box{
+    padding: 5px 5px 5px 5px;
+}
+.signbtn{
+    cursor:pointer;
+    background-color:  rgb(21, 190, 21) ;
+
+
+}
+.signbtn:hover{
+    background-color:rgb(220, 245, 240);
+    opacity:0.65;
+}
